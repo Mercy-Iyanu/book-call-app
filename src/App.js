@@ -34,12 +34,7 @@ export default function App () {
     return (
         <div>
             <h1>Rendering item lists</h1>
-            <Swiper
-                // spaceBetween={50}  // Space between each slide
-                // slidesPerView={1}   // Number of slides visible at a time
-                // navigation         // Add navigation buttons
-                // pagination={{ clickable: true }} 
-            >
+            <Swiper>
                 {
                     fetchedData.map((item) => (
                         <SwiperSlide key={item.id}>
